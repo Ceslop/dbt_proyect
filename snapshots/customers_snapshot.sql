@@ -12,7 +12,7 @@
       customer_id,
       name,
       status,
-      coalesce(updated_at, '1900-01-01'::timestamp) as updated_at
-  from {{ source('raw_operational_data', 'customers') }}
+       updated_at
+  from {{ source('RAW_OPERATIONAL_DATA', 'CUSTOMERS') }}
 
 {% endsnapshot %}
