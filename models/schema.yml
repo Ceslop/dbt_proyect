@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: RAW_OPERATIONAL_DATA
+    database: DEV_OPERATIONAL_DATA
+    schema: RAW_OPERATIONAL_DATA
+    tables:
+      - name: CUSTOMERS
+      - name: ORDERS
+      - name: SHIPMENT_EVENTS

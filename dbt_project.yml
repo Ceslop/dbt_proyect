@@ -1,0 +1,21 @@
+name: 'poc_operational_data'
+version: '1.0'
+profile: 'poc_operational_data'
+
+models:
+  poc_operational_data:
+
+    staging:
+      +schema: CONFORMED_OPERATIONAL_DATA
+      +materialized: view
+
+    intermediate:
+      +schema: ENRICHED_OPERATIONAL_DATA
+      +materialized: table
+
+    marts:
+      +schema: OPERATIONAL_OPERATIONAL_DATA
+      +materialized: table
+
+snapshots:
+  +schema: null

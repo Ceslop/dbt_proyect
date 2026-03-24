@@ -1,0 +1,14 @@
+
+ models:
+  - name: stg_operational_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+  - name: op_operational_fct_orders_incremental
+    columns:
+      - name: order_id
+        tests:
+          - not_null
