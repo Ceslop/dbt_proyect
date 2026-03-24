@@ -4,7 +4,7 @@
         target_schema='snapshots_operational_data',
         unique_key='customer_id',
         strategy='timestamp',
-        updated_at='updated_at'
+        updated_at='updated_at',
       )
   }}
 
